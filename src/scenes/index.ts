@@ -4,11 +4,12 @@ import { probabilityScenes } from './probability'
 import { randomVariablesScenes } from './random-variables'
 import { jointScenes } from './joint'
 import { samplingScenes } from './sampling'
+import { estimationScenes } from './estimation'
 
 // Scene registry. Sections reference scenes by id; scenes are grouped by course (one folder each,
 // mirroring src/content). Ids are globally unique across courses, so the flat lookup below is
 // unambiguous. Courses are added here as each is authored.
-const ALL: Scene[] = [...designScenes, ...probabilityScenes, ...randomVariablesScenes, ...jointScenes, ...samplingScenes]
+const ALL: Scene[] = [...designScenes, ...probabilityScenes, ...randomVariablesScenes, ...jointScenes, ...samplingScenes, ...estimationScenes]
 
 export const SCENES: Record<string, Scene> = Object.fromEntries(ALL.map((s) => [s.id, s]))
 
