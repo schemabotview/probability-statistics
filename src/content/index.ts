@@ -7,6 +7,7 @@ import { estimation } from './estimation'
 import { inference } from './inference'
 import { comparisons } from './comparisons'
 import { experiments } from './experiments'
+import { regression } from './regression'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -20,6 +21,7 @@ export const COURSES: Record<string, Course> = {
   [inference.id]: inference,
   [comparisons.id]: comparisons,
   [experiments.id]: experiments,
+  [regression.id]: regression,
 }
 
 export type { Course, Section }
