@@ -1,9 +1,11 @@
 import { design } from './design'
+import { probability } from './probability'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
 export const COURSES: Record<string, Course> = {
   [design.id]: design,
+  [probability.id]: probability,
 }
 
 export type { Course, Section }

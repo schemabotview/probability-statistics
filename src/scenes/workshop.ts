@@ -58,3 +58,21 @@ export const SETTINGS = {
 /** Defective chairs in each of 12 weeks, 500 inspected per week; supplier changed in week 7 (seed 8). */
 export const WEEKLY_DEFECTS = [34, 35, 29, 33, 38, 37, 59, 50, 56, 48, 55, 48]
 export const WEEKLY_N = 500
+
+/**
+ * Defect types among the quarter's 420 defective chairs (an item can have several): seat 150, joint 180,
+ * finish 180; seat∩joint 40, seat∩finish 30, joint∩finish 35, all three 15. Inclusion–exclusion gives 420.
+ */
+export const DEFECT_TYPES = { S: 150, J: 180, F: 180, SJ: 40, SF: 30, JF: 35, SJF: 15 }
+
+/** A batch of 20 chairs, 3 of them defective: the urn for chapters 2 and 3. */
+export const BATCH20 = { n: 20, defective: 3 }
+
+/**
+ * The quick visual check at the end of the line: flags 90% of defective chairs (sensitivity) and 5% of
+ * good ones (false-positive rate), against a 7% defect rate.
+ */
+export const SCREEN = { prevalence: 0.07, sensitivity: 0.9, falsePositive: 0.05 }
+
+/** Processing time model: lognormal with median 12 minutes and log-sd 0.5 (as the TIMES data). */
+export const TIME_MODEL = { median: 12, sigma: 0.5 }
