@@ -2,6 +2,7 @@ import { design } from './design'
 import { probability } from './probability'
 import { randomVariables } from './random-variables'
 import { joint } from './joint'
+import { sampling } from './sampling'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -10,6 +11,7 @@ export const COURSES: Record<string, Course> = {
   [probability.id]: probability,
   [randomVariables.id]: randomVariables,
   [joint.id]: joint,
+  [sampling.id]: sampling,
 }
 
 export type { Course, Section }

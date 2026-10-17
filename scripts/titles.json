@@ -3,5 +3,6 @@
   "design": "Statistics: Study Design, Sampling, Bias and Describing Data",
   "probability": "Probability: Events, Conditional Probability, Bayes' Rule and Independence",
   "random-variables": "Probability: Random Variables, Binomial, Poisson, Normal and Other Distributions",
-  "joint": "Probability: Joint Distributions, Covariance, Correlation and Conditional Expectation"
+  "joint": "Probability: Joint Distributions, Covariance, Correlation and Conditional Expectation",
+  "sampling": "Statistics: Sampling Distributions, Central Limit Theorem and Monte Carlo Simulation"
 }
