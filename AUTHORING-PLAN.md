@@ -65,10 +65,33 @@ where they expose an idea more cleanly.
 | `bayesian` | prior, likelihood and posterior curves; posterior predictive bars; a loss table |
 | `resampling` | bootstrap distributions; permutation nulls; robust versus classical estimates under contamination |
 
+## Status
+
+All 12 chapters (92 sections) are authored and pass `build`, `tsc`, `check` and `density`. Every frame
+was inspected on its chapter's contact sheet at 1920 × 1080. There is no audio yet. It follows review,
+in one Colab pass per chapter.
+
+- **Density:** 91 of 92 sections meet every target. One near-miss remains: `probability-set-operations`
+  has a scene area of 0.52. A Venn plot over a two-way table is wide and short, and widening it would
+  only add padding. There are no eyebrow overlaps.
+- **Ranges:** slides measure 0.80–0.93 of the pane, and scene area is 0.52–0.80. The binding axis is
+  0.89 throughout.
+- **Narration:** each section runs 175–217 words, 18,415 in total. That is about 123 minutes at
+  150 wpm, longer than calculus-optimisation, so trim in review if the pacing drags.
+- **Workshop thread, as built:** `workshop.ts` carries the chapter 1–4 data. Two later shared modules
+  hold their own chapters' data:
+  - `regression/jobs.ts` holds the regression dataset and `fitLine`.
+  - `bayesian/beta.ts` holds the beta and beta-binomial helpers.
+
+  Chapter 8's settings A/B times return in chapter 12. Chapter 1's weekly rates close the course.
+- **Code cards:** there are three: chapter 5 (`shift.py`), chapter 11 (`grid.py`) and chapter 12
+  (`perm.py`). Each prints output copied from a real run.
+- **Every number is computed.** Each scene file's comment names the computation and seed, and says
+  whether a number is exact, model-based or Monte Carlo.
+
 ## Open decisions
 
 - **Brand**: `--brand #0d9488` (teal), `--accent-2 #fbbf24` (amber); linear-algebra is blue,
   calculus-optimisation violet.
-- **Code cards**: the plan allows annotated code and output. Proposed for chapter 5 (a Monte Carlo
-  estimate with its standard error), chapter 11 (a grid posterior) and chapter 12 (bootstrap and
-  permutation), each printing output copied from a real run; tables elsewhere.
+- **Code cards**: used in chapters 5, 11 and 12 as planned (see Status); tables elsewhere. Add more
+  if you want code on screen earlier.
