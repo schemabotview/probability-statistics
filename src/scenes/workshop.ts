@@ -76,3 +76,15 @@ export const SCREEN = { prevalence: 0.07, sensitivity: 0.9, falsePositive: 0.05 
 
 /** Processing time model: lognormal with median 12 minutes and log-sd 0.5 (as the TIMES data). */
 export const TIME_MODEL = { median: 12, sigma: 0.5 }
+
+/** Seat height of a chair: normal, mean 450 mm, sd 3.9 mm (the spread across chairs, chapter 1). Spec 444–456. */
+export const SEAT = { mean: 450, sd: 3.9, lower: 444, upper: 456 }
+
+/** Minutes between machine stoppages: exponential with mean 40. */
+export const STOPPAGE_MEAN = 40
+
+/** Surface flaws per panel: Poisson with mean 1.5. */
+export const FLAWS_PER_PANEL = 1.5
+
+/** Repair cost per chair (£): 0 for the 93% that pass, else lognormal with median £25, log-sd 0.6. */
+export const REPAIR = { pZero: 0.93, median: 25, sigma: 0.6 }
