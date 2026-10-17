@@ -7,5 +7,6 @@
   "sampling": "Statistics: Sampling Distributions, Central Limit Theorem and Monte Carlo Simulation",
   "estimation": "Statistics: Estimators, Bias, Variance and Maximum Likelihood Estimation",
   "inference": "Statistics: Confidence Intervals, Hypothesis Tests, p-values and Power",
-  "comparisons": "Statistics: t-tests, Paired Comparisons, Chi-square Tests and ANOVA"
+  "comparisons": "Statistics: t-tests, Paired Comparisons, Chi-square Tests and ANOVA",
+  "experiments": "Statistics: Experimental Design, Randomisation, Confounding and Causal Inference"
 }
