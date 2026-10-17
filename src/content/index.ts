@@ -5,6 +5,7 @@ import { joint } from './joint'
 import { sampling } from './sampling'
 import { estimation } from './estimation'
 import { inference } from './inference'
+import { comparisons } from './comparisons'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -16,6 +17,7 @@ export const COURSES: Record<string, Course> = {
   [sampling.id]: sampling,
   [estimation.id]: estimation,
   [inference.id]: inference,
+  [comparisons.id]: comparisons,
 }
 
 export type { Course, Section }
