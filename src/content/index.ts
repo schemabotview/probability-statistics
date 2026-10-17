@@ -9,6 +9,7 @@ import { comparisons } from './comparisons'
 import { experiments } from './experiments'
 import { regression } from './regression'
 import { bayesian } from './bayesian'
+import { resampling } from './resampling'
 import type { Course, Section } from './types'
 
 // Course registry, in syllabus order. Courses are added here as each is authored.
@@ -24,6 +25,7 @@ export const COURSES: Record<string, Course> = {
   [experiments.id]: experiments,
   [regression.id]: regression,
   [bayesian.id]: bayesian,
+  [resampling.id]: resampling,
 }
 
 export type { Course, Section }

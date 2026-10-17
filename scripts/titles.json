@@ -10,5 +10,6 @@
   "comparisons": "Statistics: t-tests, Paired Comparisons, Chi-square Tests and ANOVA",
   "experiments": "Statistics: Experimental Design, Randomisation, Confounding and Causal Inference",
   "regression": "Statistics: Linear Regression, Diagnostics, Prediction Intervals and Logistic Regression",
-  "bayesian": "Statistics: Bayesian Inference, Beta-Binomial Updating, Credible Intervals and Decisions"
+  "bayesian": "Statistics: Bayesian Inference, Beta-Binomial Updating, Credible Intervals and Decisions",
+  "resampling": "Statistics: Resampling, Bootstrap, Permutation Tests, Robustness and Missing Data"
 }
